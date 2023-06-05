@@ -27,6 +27,8 @@ int renameDynModule(const WCHAR* libname) {
             ldr_entry->FullDllName = new_full_name_ustr;
             printf("New BaseDllName: %ls\n", ldr_entry->BaseDllName.Buffer);
             printf("New FullDllName: %ls\n", ldr_entry->FullDllName.Buffer);
+         
+            break;
         }
     }
 }
